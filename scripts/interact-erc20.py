@@ -8,13 +8,13 @@ def mintTransfer():
     print("Total supply is", erc20Basic.totalSupply({'from': account}))
 
     # Checking balance in a wallet
-    print("Account balance is", erc20Basic.balanceOf("0xE447E5358e612De3E54f49942733484A503609f5",{'from': account}))
+    print("Account balance is", erc20Basic.balanceOf("test_wallet_address",{'from': account}))
 
     # transfering tokens to that wallet 
-    erc20Basic.transfer("0xE447E5358e612De3E54f49942733484A503609f5", 50000, {'from': account}) 
-    
+    erc20Basic.transfer("test_wallet_address", 50000, {'from': account}) 
+
     # Checking balance in that wallet 
-    print("Account balance after receiving tokens is", erc20Basic.balanceOf("0xE447E5358e612De3E54f49942733484A503609f5",{'from': account}))
+    print("Account balance after receiving tokens is", erc20Basic.balanceOf("test_wallet_address",{'from': account}))
 
     
 def main():
