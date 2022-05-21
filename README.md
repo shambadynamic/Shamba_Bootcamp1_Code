@@ -1,1 +1,1 @@
-# Shamba Bootcamp 1
+# # Shamba Bootcamp 1 ERC20 Demo
